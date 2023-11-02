@@ -8,12 +8,12 @@ public class StudentAdvanceTicket extends AdvanceTicket {
         this(price, -1, daysPurchasedEarlier);
     }
 
-//    public StudentAdvanceTicket(int number, int daysPurchasedEarlier) {
-//        this(50.0, daysPurchasedEarlier);
-//    }
+    public StudentAdvanceTicket(int number, int daysPurchasedEarlier) {
+        this(50.0, daysPurchasedEarlier);
+    }
 
     @Override
     public String toString() {
-        return "Student advance ticket, " + super.toString();
+        return super.toString() + " (Student ID required)";
     }
 }

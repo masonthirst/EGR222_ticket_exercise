@@ -1,15 +1,11 @@
 public class Ticket {
-    double price;
-    int number;
-    int days;
+    protected double price;
+    protected int number;
+    //protected int days;
 
     public Ticket(double price, int number) {
         this.price = price;
         this.number = number;
-    }
-
-    public Ticket(double price) {
-        this(price, -1);
     }
 
     public Ticket(int number) {
