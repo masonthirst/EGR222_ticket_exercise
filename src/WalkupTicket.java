@@ -13,7 +13,7 @@ public class WalkupTicket extends Ticket {
     }
 
     public String toString() {
-        return "Ticket type: Walk-up, " + super.toString();
+        return "Walk-up, " + super.toString();
     }
 
 }

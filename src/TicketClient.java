@@ -19,16 +19,16 @@ public class TicketClient {
         AdvanceTicket at1 = new AdvanceTicket(75568, 10);
         System.out.println(at1);
 
-        AdvanceTicket at2 = new AdvanceTicket(17, 12);
+        AdvanceTicket at2 = new AdvanceTicket(17, 20);
         System.out.println(at2);
 
-        AdvanceTicket at3 = new AdvanceTicket(18, 9);
+        AdvanceTicket at3 = new AdvanceTicket(18, 2);
         System.out.println(at3);
 
         StudentAdvanceTicket st1 = new StudentAdvanceTicket(75568, 30);
         System.out.println(st1);
 
-        StudentAdvanceTicket st2 = new StudentAdvanceTicket(734, 12);
+        StudentAdvanceTicket st2 = new StudentAdvanceTicket(734, 9);
         System.out.println(st2);
     }
 }

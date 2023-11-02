@@ -1,11 +1,11 @@
 public class AdvanceTicket extends Ticket {
 
     public AdvanceTicket(double price, int number, int daysPurchasedEarlier) {
-        super((int) price);
-        if (daysPurchasedEarlier <= 10) {
-            this.price *= 0.40;
+        super(price, number);
+        if (daysPurchasedEarlier > 10) {
+            this.price *= 0.60;
         } else if (daysPurchasedEarlier > 0) {
-            this.price *= 0.20;
+            this.price *= 0.80;
         } else throw (new IllegalArgumentException("Must be greater than 0."));
     }
 
@@ -18,7 +18,7 @@ public class AdvanceTicket extends Ticket {
     }
     @Override
     public String toString() {
-        return "Ticket type: Advanced, " + super.toString();
+        return "Advanced, " + super.toString();
     }
 
 }
